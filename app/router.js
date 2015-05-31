@@ -7,6 +7,8 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.resource('stars');
+  this.route('about');
+  this.resource('contact', function() {});
 });
 
 export default Router;
