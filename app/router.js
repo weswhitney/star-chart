@@ -9,6 +9,7 @@ Router.map(function() {
   this.resource('stars');
   this.route('about');
   this.resource('contact', function() {});
+  this.resource('oopses', function () {});
 });
 
 export default Router;
