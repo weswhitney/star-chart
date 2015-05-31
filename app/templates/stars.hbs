@@ -1,7 +1,13 @@
 <div class="container">
+  <h1>Stars</h1>
+
   <ul>
-    <li><a href="#">star 1</a></li>
-    <li><a href="#">star 2</a></li>
-    <li><a href="#">star 3</a></li>
+    <li><a href="#">did homework</a></li>
+    <li><a href="#">took bath</a></li>
+    <li><a href="#">washed dishes</a></li>
   </ul>
+
+  {{#each star in model}}
+    {{star.name}}
+  {{/each}}
 </div>
