@@ -6,9 +6,12 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('stars');
+  this.resource('stars', {path: '/'});
   this.route('about');
-  this.resource('contact', function() {});
+  this.resource('contact', function() {
+    this.resource('phone');
+    this.resource('email');
+  });
   this.resource('oopses', function () {});
 });
 

@@ -9,11 +9,16 @@
   </nav>
   <h1>Contact</h1>
 
-  <p>want to get in touch?</p>
-  <ul>
-    <li>Phone: 1-800-starchart</li>
-    <li>Email: <a href="wesleywhitney@gmail.com">wesleywhitney@gmail.com</a>.</li>
-  </ul>
-
+  <div class="row">
+    <div class="col-md-6">
+      <p>want to get in touch?</p>
+      <ul>
+        <li>{{#link-to 'phone'}}Phone{{/link-to}}</li>
+        <li>{{#link-to 'email'}}Email{{/link-to}}</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      {{outlet}}
+    </div>
+  </div>
 </div>
-{{outlet}}
