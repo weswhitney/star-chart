@@ -6,3 +6,10 @@
 </p>
 
 <button class="btn btn-primary"{{action 'showRealName'}}>click here to learn draculas name</button>
+
+{{#if isPictureShowing}}
+  <button class="btn btn-info"{{action 'hidePicture'}}>Hide picture</button>
+  <p><img src="https://unsplash.imgix.net/photo-1428342109953-409d2876cdab?fit=crop&fm=jpg&h=800&q=75&w=1050" alt="a photo of an eagle" /></p>
+{{else}}
+  <button class="btn btn-info"{{action 'showPicture'}}>click here to see a picture</button>
+{{/if}}
